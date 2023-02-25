@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*estilo para telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+header {
+    background-color: rgb(158, 158, 158);
+}
+
+header > h1 {
+    text-align: center; /*deixou o titulo centralizado*/
+}
+
+menu ul {
+    list-style-type: none; /* fez perder a bolinha*/
+    background-color: gray; /* fez a cor da caixa inline da lista ficar mais escura*/
+}
+
+menu li {
+    background-color: rgb(75, 75, 75); /*fez apenas a cor de fundo onde estão exatamente as letras ficarem mais escuras*/
+    color: white; /*fez as palavras da lista ficarem brancas*/
+    display: inline-block;  /*faz um ficar do lado do outro na lista*/
+    padding: 10px;  /*fez a cor cinza da lista ficar maior*/  
+}
+
+article {
+    width: 600px; /*fez o artigo ficar maior*/
+    display: block; /*fez o artigo ficar em caixa pra usar o margin auto*/
+    margin: auto; /* fez o artigo ficar centralizado*/
+}
