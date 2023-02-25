@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Query</title>
+    <style> /*se quiser, pode botar esse css em um link css de pasta style sem nem um problema, mas tem que usar o charset UTF-8*/
+        /*declarações gerais*/ 
+        @media all {   /*essa declaração de midia não é necessária*/
+            * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            width: 100vw; /*largura da tela*/
+            height: 100vh; /*altura da tela da tela*/
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #1526a7;
+            padding: 10px;
+        }
+        /*declarações retrato*/ 
+
+        @media screen and (orientation: portrait) {  /*essa é a declaração de midia usada para tela em pé feito via css (portrait) */
+            body {
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center;
+            } 
+        }
+        }
+
+
+        /*declarações paisagens*/
+        @media screen and (orientation: landscape) { /*essa é a declaração de midia usada para tela deitada feita via css (landscape)*/
+            body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: bottom left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
