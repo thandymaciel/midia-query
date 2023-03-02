@@ -9,6 +9,8 @@ Tablet: 768px até 992 px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px*/
 
+/*ATENÇÃO: TEM QUE VERIFICAR SUAS PRÓPRIAS MEDIDAS DE BREAK POINTS*/
+
 /*as telas pequenas já foram feitas em mobile first*/
 
 @media print {
