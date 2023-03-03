@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
-<body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()"> <!-- onresize = quando mudar o tamanho -->
+    <!--se não tiver isso o menu some quando aperta pra abrir e fechar e depois aumenta tela-->
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!--esse i é de íconi, ele já foi de itálico no passado-->
@@ -36,7 +37,7 @@
     <script>
 
         function mudouTamanho() {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 768) {  // comando para largura da tela
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
