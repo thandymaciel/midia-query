@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+
 </head>
 <body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!--esse i é de íconi, ele já foi de itálico no passado-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -43,12 +44,14 @@
         }
 
         function clickMenu() {
-            if (itens.style.display == 'block') {
+            if (itens.style.display == 'block') { // aqui ele acessou a arvore dom pelo id, depois style, depois o elemento, depois a propriedade
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
-            }
+            } // se estiver em bloco, esconda, senão, bloco.
         }
     </script>
+
+
 </body>
 </html>
